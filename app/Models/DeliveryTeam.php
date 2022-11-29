@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class DeliveryTeam extends Model
+{
+    use HasFactory;
+
+    public function delivaries()
+    {
+        return $this->hasMany(Delivery::class);
+    }
+}
